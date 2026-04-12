@@ -6,8 +6,8 @@
   Pull this repo on the mgmt VM, then run:
     powershell -ExecutionPolicy Bypass -File .\install-wazuh-agent.ps1
 
-  Install and start the service yourself, for example:
-    msiexec.exe /i C:\wazuh-agent.msi /q WAZUH_MANAGER="172.16.200.10" WAZUH_REGISTRATION_SERVER="172.16.200.10" WAZUH_AGENT_GROUP="default"
+  Install (see install-wazuh-agent-msi.ps1 on GitHub) and start when ready:
+    powershell -ExecutionPolicy Bypass -File .\install-wazuh-agent-msi.ps1
     net start wazuh
 #>
 param(
